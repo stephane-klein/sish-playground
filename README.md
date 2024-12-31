@@ -1,10 +1,10 @@
 # Sish playground
 
-In my playground, I start by installing [PowerDNS](https://en.wikipedia.org/wiki/PowerDNS) on a Scaleway instance.
+In this playground, I start by installing [PowerDNS](https://en.wikipedia.org/wiki/PowerDNS) on a Scaleway virtual instance.  
+Next, I configure [dnsrobocert](https://dnsrobocert.readthedocs.io/) to generate an SSL Let's Encrypt certificate using the DNS Challenge method, securing the `wildcard *.playground.stephane-klein.info`.  
+Then, I install [Sish](https://docs.ssi.sh/), a tool that allows exposing an HTTP service from my workstation to the Internet with a simple *ssh* command.
 
-Then I install [dnsrobocert](https://dnsrobocert.readthedocs.io/) to generate wildcard (`*.playground.stephane-klein.info`) Let's encrypt certificates with a DNS challange.
-
-Then I install [Sish](https://docs.ssi.sh/) to expose with workstation *ssh* my local service on Internet.
+Finally, I run tests to ensure everything is working correctly.
 
 ## Prerequisites
 
